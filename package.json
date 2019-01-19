@@ -7,8 +7,14 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "camelcase-keys": "^5.0.0",
     "decamelize-keys": "^1.1.0",
     "loud-rejection": "^1.6.0",
-    "read-pkg": "^4.0.1"
+    "minimist-options": "^4.0.0",
+    "normalize-package-data": "^2.4.0",
+    "read-pkg": "^4.0.1",
+    "redent": "^2.0.0",
+    "trim-newlines": "^2.0.0",
+    "yargs-parser": "^11.1.1"
   }
 }
