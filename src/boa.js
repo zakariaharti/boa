@@ -8,7 +8,7 @@ const yargs = require('yargs-parser');
 const camelcaseKeys = require('camelcase-keys');
 const redent = require('redent');
 const trimNewlines = require('trim-newlines');
-const normalizeData = require('normalize-package-data');
+const normalizeData = require('normalize-package-data')
 
 const boa =  (async (options) => {
   options = Object.assign({},options,{
