@@ -10,9 +10,9 @@ const redent = require('redent');
 const trimNewlines = require('trim-newlines');
 const normalizeData = require('normalize-package-data');
 
-const boa =  (async (options) => {
+const boa = options => {
   options = Object.assign({},options,{
-    packageFile: await readPkg({
+    packageFile: readPkg.readSync({
       cwd: path.dirname(module.parent.filename),
       normalize: false
     }),
@@ -93,6 +93,6 @@ const boa =  (async (options) => {
 		showHelp,
 		showVersion
   };
-});
+};
 
 module.exports = boa;
