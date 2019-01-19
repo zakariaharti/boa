@@ -57,18 +57,18 @@ const boa =  (async (options) => {
 
   let {description} = options;
 	if (!description && description !== false) {
-		({description} = pkg);
+		({description} = packageFile);
 	}
 
 	helpText = (description ? `\n  ${description}\n` : '') + (helpText ? `\n${helpText}\n` : '\n');
 
   const showHelp = code => {
-		console.log(help);
+		console.log(helpText);
 		process.exit(typeof code === 'number' ? code : 2);
 	};
 
 	const showVersion = () => {
-		console.log(typeof options.version === 'string' ? options.version : pkg.version);
+		console.log(typeof options.version === 'string' ? options.version : packageFile.version);
 		process.exit();
 	};
 
