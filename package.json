@@ -1,0 +1,12 @@
+{
+  "name": "boa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zakariaharti/boa.git",
+  "author": "zakariaharti <zakariya.developer@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "read-pkg": "^4.0.1"
+  }
+}
