@@ -17,5 +17,8 @@
     "redent": "^2.0.0",
     "trim-newlines": "^2.0.0",
     "yargs-parser": "^11.1.1"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
