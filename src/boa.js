@@ -13,7 +13,7 @@ const normalizeData = require('normalize-package-data');
 const boa =  (async (options) => {
   options = Object.assign({},options,{
     packageFile: await readPkg({
-      cwd: path.dirname(module.parent.filename);
+      cwd: path.dirname(module.parent.filename),
       normalize: false
     }),
     argv: process.argv.slice(2),
@@ -85,14 +85,14 @@ const boa =  (async (options) => {
 
 	const flags = camelcaseKeys(argv, {exclude: ['--', /^\w$/]});
 
-  return new Promise.resolve({
+  return {
 		input,
 		flags,
 		packageFile,
 		helpText,
 		showHelp,
 		showVersion
-  });
+  };
 });
 
 module.exports = boa;
