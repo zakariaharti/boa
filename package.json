@@ -9,6 +9,7 @@
   "devDependencies": {
     "camelcase-keys": "^5.0.0",
     "decamelize-keys": "^1.1.0",
+    "jest": "^23.6.0",
     "loud-rejection": "^1.6.0",
     "minimist-options": "^4.0.0",
     "normalize-package-data": "^2.4.0",
