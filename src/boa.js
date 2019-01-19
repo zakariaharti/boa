@@ -1,5 +1,6 @@
 'use strict'
 
+const path = require('path');
 const readPkg = require('read-pkg');
 const loudRejection = require('loud-rejection');
 const decamelizeKeys = require('decamelize-keys');
@@ -12,8 +13,8 @@ const normalizeData = require('normalize-package-data');
 
 const boa = options => {
   options = Object.assign({},options,{
-    packageFile: readPkg.readSync({
-      cwd: path.dirname(module.parent.filename),
+    packageFile: readPkg.sync({
+      cwd: path.dirname(__dirname),
       normalize: false
     }),
     argv: process.argv.slice(2),
