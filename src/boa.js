@@ -94,3 +94,5 @@ const boa =  (async (options) => {
 		showVersion
   });
 });
+
+module.exports = boa;
