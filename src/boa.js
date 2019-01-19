@@ -36,7 +36,7 @@ const boa = options => {
       }
 
       return flags;
-    }, options.flags);
+    }, options.flags)
     : options.flags;
 
   let minimistoptions = {
