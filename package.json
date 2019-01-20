@@ -1,7 +1,7 @@
 {
   "name": "boa",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/boa.js",
   "repository": "https://github.com/zakariaharti/boa.git",
   "author": "zakariaharti <zakariya.developer@gmail.com>",
   "license": "MIT",
