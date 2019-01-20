@@ -4,7 +4,7 @@ describe('test boa', () => {
   it('should return an object', () => {
     const cli = boa({
       argv: ['foo', '--foo-bar', '-u', 'cat', '--', 'unicorn', 'cake'],
-  		help: `
+  		helpText: `
   			Usage
   			  foo <input>
   		`,
@@ -14,7 +14,7 @@ describe('test boa', () => {
   			'--': true
   		}
     });
-
+    console.log(cli);
     expect(cli.input[0]).toEqual('foo');
   });
 });
