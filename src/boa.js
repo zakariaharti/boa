@@ -12,7 +12,7 @@ const trimNewlines = require('trim-newlines');
 const normalizeData = require('normalize-package-data');
 
 const boa = options => {
-  options = Object.assign({},options,{
+  options = {
     packageFile: readPkg.sync({
       cwd: path.dirname(__dirname),
       normalize: false
@@ -23,8 +23,9 @@ const boa = options => {
     autoHelp: true,
     autoVersion: true,
     booleanDefault: false,
-    handlePromiseRejection: true
-  });
+    handlePromiseRejection: true,
+    ...options
+  };
 
   if(options.handlePromiseRejection){
     loudRejection();
